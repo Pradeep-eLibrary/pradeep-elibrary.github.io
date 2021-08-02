@@ -1,0 +1,444 @@
+ body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#landing-page{
+    background:url(./wallpaper_design.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    z-index: 1;
+}
+#landing-page:before{
+    content: "";
+    background-image: linear-gradient(to right,rgba(27, 20, 20, 0.8),rgba(17, 24, 17, 0.8));
+    opacity: .8;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* sign-in-bg */
+#sign-in-bg{
+    background:url(./friends_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    z-index: 1;
+}
+#sign-in-bg:before{
+    content: "";
+    background-image: linear-gradient(to bottom,transparent,rgba(63, 135, 163, 0.76));
+    opacity: .8;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* log in bg */
+
+#log-in-bg{
+    background:url(./water_droplet.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    z-index: 1;
+}
+#log-in-bg:before{
+    content: "";
+    background-image: linear-gradient(to bottom,rgb(241, 64, 162),rgba(39, 166, 189, 0.8));
+    opacity: .8;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#main-in-bg{
+    background:url(./Library_img.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    z-index: 1;
+}
+#main-in-bg:before{
+    content: "";
+    background-image: linear-gradient(to right,rgb(29, 24, 27,.7),rgba(16, 18, 19, 0.7));
+    opacity: .8;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+.hover:hover{
+    font-size: 14px;
+    font-weight: 500;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    border: 1px double grey;
+    box-shadow: 0 0 6px 0 grey;
+    border-radius: 5px;
+    color: black !important;
+}
+
+.active-nav{
+    border-bottom: 2px solid  red;
+    font-weight: 500;
+    color: white !important;
+    width: fit-content;
+    
+}
+
+#index-html{
+    background: linear-gradient(to right, rgb(88, 88, 240),rgb(236, 89, 89));
+    min-height: 85px;
+    
+
+}
+
+#index-html div{
+
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+
+.nav-link{
+    position:relative;
+}
+
+.nav-link i{
+    background-color:tomato;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.animate{
+    height: 100%;
+    width: 0%;
+    transition: .5s;
+    
+}
+
+.nav-link:hover .animate{
+    width: 100%;
+    transition: .5s;
+}
+
+.aboutLib{
+/*     background:linear-gradient(to right,rgb(243, 61, 243),rgb(0, 38, 255)); 
+ */
+    color: aqua;
+    font: 500;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: 3px ;
+}
+
+.aboutLib span{
+    background:linear-gradient(to top,rgb(248, 245, 245),rgb(245, 23, 189)); 
+    -webkit-background-clip: text;
+    color: transparent;
+     transition: 1s;
+     font-family: 'Roboto', sans-serif;
+    }
+
+.aniText{
+    background:linear-gradient(to top,rgb(207, 13, 13)),rgb(5, 0, 1) !important; 
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+    transition: 1s;
+    font-size: 23px;
+    font-family: monospace;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.navbar-brand{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    font-size: 30px;
+    transition: 2s;
+    color: white !important;  
+}
+
+.navbar-brandAni{
+  
+  font-size: 30px;
+  color:lime !important;
+  transition: 2s;
+}
+
+.brand1{
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    border-right : 2px solid rgb(31, 228, 41) ;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 2s;
+   
+}
+
+
+
+
+.brand2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-right: 2px double red;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 2s;
+    box-shadow: 0 1px 0  black;
+}
+
+
+label{
+    color: black;
+    font-weight: 500;
+}
+
+.btn-shadow{
+    box-shadow: 0 2px 3px 0 yellow;
+
+    font-weight: 600;
+}
+
+.card-form{
+    box-shadow: 3px 2px 12px black;
+    background-color: transparent;
+}
+
+.ex-btn{
+ width:250;
+ transition: .5s;   
+}
+
+
+.ex-btn:hover{
+
+width: 300px;
+transition: .5s;
+}
+/* inside-bg */
+.bg-content{
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 brown;
+    
+}
+
+.main-card{
+    box-shadow: 0 0 50px 0 black;
+}
+
+.scroll-up{
+    margin-top:50px;
+    transition: .5s;
+}
+
+.scroll-ups{
+    margin-top:30px;
+    transition: .5s;
+}
+
+.card-book{
+    background-color:rgb(245, 52, 52) ;
+
+}
+
+
+/* test */
+.card-book:hover{
+    margin-top: 20px;
+    transition: .5s;
+
+    border: 3px double yellow;
+    box-shadow: 0 0 8px 0 yellow;
+}
+.card-book{
+    transition: .5s;
+}
+/* animation check */
+
+#famous_books{
+    background-color:rgb(48, 42, 42);
+}
+
+.nav-pills a{
+    color: white;
+    margin: 10px;
+    width: fit-content;
+}
+.tab-pane img{
+    height: 150px;
+    width: 100px;
+    padding: 2px;
+    margin: auto ;
+    transition: 2s;
+}
+
+
+.tab-pane i{
+    color: blue;
+    font-size: 20px;
+}
+.tab-pane small{
+    color: grey;
+    font-size: 15px;
+}
+
+.book-border{
+    border: 2px double red;
+    padding-top: 5px;
+    box-shadow:  0 0 8px 0 black;
+}
+
+.dropdown-menu{
+    background-color:crimson;
+}
+
+.dropdown-menu a{
+    color: black;
+    font-weight: 600;
+}
+
+.img-small img{
+    height: 300px;
+}
+
+.fa-angle-double-up{
+    font-size: 30px;
+
+}
+
+.some-bg{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+/* inside-bg */
+/* for meida queries */
+@media screen and (max-width:350px) {
+    .aboutLib{
+        /*     background:linear-gradient(to right,rgb(243, 61, 243),rgb(0, 38, 255)); 
+         */
+            
+            font: 500;
+            font-size: 17px;
+            font-family: 'Roboto', sans-serif;
+            word-spacing: 3px ;
+        }
+        
+
+    .aboutLib span{
+        background:linear-gradient(to top,rgb(248, 245, 245),rgb(245, 23, 189));  
+        -webkit-background-clip: text;
+        color: transparent;
+         transition: 1s;
+         font-family: 'Roboto', sans-serif;
+    }
+ 
+    .aniText{
+        background:linear-gradient(to top,rgb(207, 13, 13)),rgb(5, 0, 1) !important; 
+        -webkit-background-clip: text !important;
+        color: transparent !important;
+        transition: 1s;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+ 
+    }
+ 
+    .navbar-brand{
+        font-size: 20px;
+    }
+
+ 
+    #sign-in-bg{
+        background:url(./friends_bg.jpg);
+        background-position: 25%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        min-height: 100%;
+        z-index: 1;
+    }
+   
+   
+   .bg-content{
+       font-size: 15px;
+   }
+
+   .card-book:hover{
+    margin-top: auto;
+}
+.card-book{
+    transition: .5s;
+}
+
+.tab-pane img{
+    height: 80px;
+    width: 60px;
+    padding: 2px;
+    margin: 2px;    
+}
+.tab-pane i{
+font-size: 12px;
+}
+.tab-pane small{
+font-size:10px ;
+}
+
+.img-small img{
+    height: 200px !important;
+}
+
+.some-bg{
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 50%;
+    z-index: 0;
+}
+}
